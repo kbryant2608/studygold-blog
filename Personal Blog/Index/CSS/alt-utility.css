@@ -1,0 +1,264 @@
+*,
+*::before,
+*::after { 
+  box-sizing: border-box;
+}
+
+.btn {
+  background-color: white;
+  border: 1px solid rgb(238, 203, 30);
+  border-radius: 1rem;
+  color: gray;
+  padding: 0.5rem;
+  text-transform: lowercase;
+  text-align: center;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color: rgba(238, 203, 30, 0.427);
+  color: rgb(152, 140, 6);
+}
+
+.btn--block {
+  display: block;
+  width: 100%;
+}
+ 
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cards__item {
+  display: flex;
+  padding: 1rem;
+  @media(min-width: 40rem) {
+    width: 50%;
+  }
+  @media(min-width: 56rem) {
+    width: 33.3333%;
+  }
+}
+
+.card {
+  background-color: white;
+  border-radius: 0.25rem;
+  box-shadow: 0 20px 40px -14px rgba(0,0,0,0.25);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  &:hover {
+    .card__image {
+      filter: contrast(100%);
+    }
+  }
+}
+
+.card__content {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.card__image {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+  filter: contrast(70%);
+  filter: saturate(180%);
+  overflow: hidden;
+  position: relative;
+  transition: filter 0.5s cubic-bezier(.43,.41,.22,.91);;
+  &::before {
+    content: "";
+    display: block;
+    padding-top: 56.25%;
+    aspect-ratio: 16 / 9;
+  }
+  @media(min-width: 40rem) {
+    &::before {
+      padding-top: 66.6%;
+      aspect-ratio: 3 / 2;
+    }
+  }
+}
+
+.card__image--salad {
+  background-image: url(Images/salad.jpg);
+}
+
+.card__image--girl-river {
+  background-image: url(Images/girl-river.jpg);
+}
+
+.card__image--coffee-shop {
+  background-image: url(Images/coffee-shop.jpg);
+}
+
+.card__image--laptop {
+  background-image: url(Images/laptop.jpg);
+}
+
+.card__title {
+  color: darkkhaki;
+  font-size: 1.25rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.card__text {
+  flex: 1 1 auto;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin-bottom: 1.25rem;
+  color: black;
+}
+
+
+.road-image {
+  background-image: url(Images/road2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 80vh;
+  margin-right: 3.5rem;
+  padding: auto;
+  background-size: center;
+  grid-row: 2 / -1;
+  /*I added a margin to this image, but I was having trouble getting the image to be responsive, also
+  could not figure out why I needed the margin, but it worked for the time being. */
+  
+  @media (min-width: 767px) {
+    grid-column: 3 / 4;
+ }
+
+ @media (min-width: 1024px) {
+   grid-column: 2 / -1;
+ }
+}
+
+h1 {
+  font-family: "Quicksand", sans-serif; 
+  line-height: 7;
+  letter-spacing: -2px;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  z-index: 1;
+
+
+  @media (min-width: 767px) {
+    align-self: center;    
+    grid-column: 2 / 3;
+  }
+
+  @media (min-width: 1024px) {
+    color: rgb(247, 244, 244);
+    grid-column: 2 / 4;
+    grid-row: 3 / 4;
+    z-index: 1;
+  }
+  @media (max-width: 1000px) {
+    font-size: 1.5rem;
+  }
+    
+  }
+
+  .road-text {
+    font-family: "Quicksand", sans-serif; 
+    line-height: 2;
+    letter-spacing: -2px;
+    text-align: left;
+    font-size: 1.5rem;
+    font-weight: 700;
+    z-index: 1;
+    padding: 0 1rem 0 1;
+
+    @media (min-width: 767px) {
+      align-self: center;    
+      grid-column: 2 / 3;
+    }
+  
+    @media (min-width: 1024px) {
+      color: rgb(247, 244, 244);
+      grid-column: 2 / 4;
+      grid-row: 3 / 4;
+      z-index: 1;
+    }
+    @media (max-width: 1000px) {
+      font-size: 1.5rem;
+    }
+  }
+
+  .road-box {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    height: 60vh;
+    width: fit-content;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    float: left;
+
+   
+    @media (min-width: 767px) {
+      grid-column: 2 / 3;
+  }
+}
+
+
+
+  .road-intro-text {
+    font-family: "Quicksand", sans-serif; 
+    padding: auto;
+    letter-spacing: -2px;
+    text-align: right;
+    font-size: 2rem;
+    font-weight: 700;
+    z-index: 1;
+  
+  
+    @media (min-width: 767px) {
+      align-self: center;    
+      grid-column: 2 / 3;
+    }
+  
+    @media (min-width: 1024px) {
+      color: rgb(247, 244, 244);
+      grid-column: 2 / 4;
+      grid-row: 3 / 4;
+      z-index: 1;
+    }
+    @media (max-width: 1000px) {
+      font-size: 1.5rem;
+    }
+  }
+
+  .road-intro-box {
+    background-color: rgba(44, 46, 49, 0.5);
+    width: 70vh;
+    float: right;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    border-radius: 10px;
+
+  }
