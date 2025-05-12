@@ -1,10 +1,17 @@
-# personal-blog-website
-Personal Blog Website @Udacity<br>
+# studygold-blog
 
-The name of my personal blog website is "StudyGold."
+StudyGold — Educational Blog Platform
 
-<p>Reviewer: I have submitted this project three times. On my last two reviews, it was requested that my root directory be organized, as per the rubric.<br> 
-I'm not sure if this is because I am using VS Code to write my code, but every time I create a new folder to organize, i.e "Assets," and then move my CSS code to the new folder, the links end
-up broken and I am spending hours trying to figure out why I cannot create a new folder and move my assets in there without CSS not displaying properly.<br>
-Please help!<br>
-This is the only change I needed to make on my last review, my website is in good shape but I cannot create new files to organize my assets. Thank you!</p>
+StudyGold is a blog platform designed to help students find balance and peace in their academic journeys. It features curated articles on study habits, self-care, effective learning environments, and nutrition that supports cognitive health.
+
+Technologies Used: HTML, CSS, JavaScript
+
+Key Features:
+
+Engaging blog card layout with individual article previews
+
+Responsive design optimized for mobile and desktop viewing
+
+Easy navigation between blog categories, About, and Contact pages
+
+Clean UI with a focus on readability and user experience
