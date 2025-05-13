@@ -91,19 +91,19 @@
 }
 
 .card__image--salad {
-  background-image: url(images/salad.jpg);
+  background-image: url("../images/salad.jpg");
 }
 
 .card__image--girl-river {
-  background-image: url(images/girl-river.jpg);
+  background-image: url("../images/girl-river.jpg");
 }
 
 .card__image--coffee-shop {
-  background-image: url(images/coffee-shop.jpg);
+  background-image: url("../images/coffee-shop.jpg");
 }
 
 .card__image--laptop {
-  background-image: url(images/laptop.jpg);
+  background-image: url("../images/laptop.jpg");
 }
 
 .card__title {
@@ -124,7 +124,7 @@
 
 
 .road-image {
-  background-image: url(images/road.jpg);
+  background-image: url("../images/road.jpg");
   background-position: center;
   background-repeat: no-repeat;
   height: 80vh;
