@@ -1,0 +1,145 @@
+/**,
+*::before,
+*::after { 
+  box-sizing: border-box;
+}
+not sure if this is needed, placeholder.*/
+
+html {
+  background-color: #f0f0f0;
+}
+
+
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr); /* 12 columns */
+  grid-template-rows: 50px 60px 80px 1fr 20% 80px 120px 30px 1fr; /* 9 rows */
+  gap: 1rem;
+  padding: 10px;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 200;
+  max-width: 1000px;
+  margin: 0 auto;
+
+  @media (max-width: 1260px) {
+    columns: 6;
+    grid-template-rows: minmax(100px, auto);
+  }
+}
+
+header{
+  /*   border: 1px solid blue; */
+   display: flex; 
+  font-weight: 700;
+    padding-left: 10px;
+    text-align: left;
+    font-size: 24pt;
+    font-family: "Quicksand", sans-serif;
+    padding: auto;
+    max-width: 0 auto;
+  }
+  
+  .subhead{
+
+    font-size: 14pt;
+    font-weight: 200;
+    padding-left: 10px;
+    text-align: left;
+  }
+
+ .main {
+      /*   border: 1px solid green; */
+      display: grid; 
+      grid-row: 1 / span 4;
+      grid-column: 1 / span 6;
+      grid-column-start: 1;
+      grid-row-start: 2;
+        font-family: "Quicksand", sans-serif;
+        font-weight: 400;
+        padding: 10px;
+    }
+    
+  h4 {
+    font-family: "Quicksand", sans-serif;
+    font-weight: 200;
+    font-size: 11pt;
+    padding-left: 5px;
+  }
+
+  aside {
+    /*    border: 1px solid green; */
+      grid-row: 3;
+      grid-column: 12 / span 2;
+      grid-column-start: 12;
+      grid-row-start: 4;
+      padding: 1px;
+      font-style: italic;
+      font-weight: 600;
+      float: right;
+      width: 200px;
+        content: "";
+        display: grid;
+        clear: both;
+        text-align: left;
+        
+        /* I wanted to create a sidebar that I could include a better grid box in, but got stuck here. */
+
+@media screen and (max-width: 1100px) {
+     width: 150px;
+      grid-row: 4 / span 1;
+  }
+}
+
+  aside .border {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  height: 275px;
+
+  @media screen and (max-width: 1100px) {
+    height: 350px;
+    
+  }
+  }
+
+li {
+  list-style-type: none;
+  padding-left: 5px;
+}
+
+.h5 {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 200;
+  font-size: 3em;
+  color: black;
+  text-align: left;
+}
+
+.blockquote-1 {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1.5em;
+  margin-inline-start: 60px;
+  margin-inline-end: 30px;
+
+  margin-right: 0;
+  padding-left: 1.375em;
+  border-left: 0.375em solid #7B8898;
+  color: #073569;
+  font-weight: 700;
+  font-size: 14pt;
+  font-style: italic;
+
+  @media screen and (max-width: 1100px) {
+    font-size: 12pt;
+    display: flexbox;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    padding-left: 0;
+    margin-left: auto;
+    column-count: 2;
+    column-gap: 5px;
+
+}
+}
